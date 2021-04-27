@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <title>CG - Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("user_ciNdVJlqB9l0ym4WC1Pac");
+        })();
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="index.html">
+            <h2 class="heading-light" id="title-name">Christopher Goodfellow</h2>
+            <p class="content-light" id="job-title">Full Stack Web Developer</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav heading-dark">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html"><span class="tag-text text-lowercase">&lta&gt</span> About <span class="tag-text text-lowercase">&lt/a&gt</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html"><span class="tag-text text-lowercase">&lta&gt</span> Projects <span class="tag-text text-lowercase">&lt/a&gt</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html"><span class="tag-text text-lowercase">&lta&gt</span> Contact <span class="tag-text text-lowercase">&lt/a&gt</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="assets/cv/cgresume.pdf"><span class="tag-text text-lowercase">&lta&gt</span> CV Download <span class="tag-text text-lowercase">&lt/a&gt</span></a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="page-content">
+        <div class="container-fluid page-container">
+            <p class="tag-text">&lthtml&gt</p>
+            <p class="pos1 tag-text">&ltbody&gt</p>
+            <div class="row">
+                <div class="col">
+                    <p class="pos2 tag-text">&lth3&gt</p>
+                    <h3 class="pos3 heading-light">Get In Touch</h3>
+                    <p class="pos2 tag-text">&lt/h3&gt</p>
+                    <p class="pos2 tag-text">&ltp&gt</p>
+                    <p class="pos3 content-light">I'm currently looking for new opportunities. If you would like to connect, have a question or wish to discuss a job opportunity please feel free to get in touch below. </p>
+                    <p class="pos2 tag-text">&lt/p&gt</p>
+                    <form onsubmit="return sendMail(this);" id="contact-form">
+                        <p class="pos2 tag-text">&ltform&gt</p>
+                        <div class="form-group pos3">
+                            <p class="tag-text">&ltlabel&gt</p>
+                            <label for="fullname" class="heading-light pos1">Full Name</label>
+                            <p class="tag-text">&lt/label&gt</p>
+                            <p class="tag-text">&ltinput&gt</p>
+                            <input type="text" name="name" class="form-control content-dark" id="fullname" placeholder="Name" required>
+                        </div>
+                        <div class="form-group pos3">
+                            <p class="tag-text">&ltlabel&gt</p>
+                            <label for="emailAddress" class="heading-light pos1">Email address</label>
+                            <p class="tag-text">&lt/label&gt</p>
+                            <p class="tag-text">&ltinput&gt</p>
+                            <input type="email" name="emailaddress" class="form-control content-dark" id="emailAddress" aria-describedby="emailAddress"
+                                placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group pos3">
+                            <p class="tag-text">&ltlabel&gt</p>
+                            <label for="queryTextArea" class="heading-light pos1">Your Query</label>
+                            <p class="tag-text">&lt/label&gt</p>
+                            <p class="tag-text">&lttextarea&gt</p>
+                            <textarea class="form-control content-dark" name="customersummary" id="queryTextArea" rows="3" required></textarea>
+                            <p class="tag-text">&lt/textarea&gt</p>
+                        </div>
+                        <p class="tag-text pos3">&ltbutton&gt</p>
+                        <button type="submit" class="home-buttons heading-light text-center button-margin">Submit</button>
+                        <p class="tag-text pos3">&lt/button&gt</p>
+                        <p class="pos2 tag-text">&lt/form&gt</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer class="footer-bg">
+        <div class="container">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-12">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a target="_blank" rel="noreferrer" href="https://github.com/Tawnygoody">
+                                <i class="fab fa-github-square fa-2x icons" aria-hidden="true"></i>
+                                <span class="sr-only">GitHub</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/christopher-goodfellow-3aba641bb/">
+                                <i class="fab fa-linkedin fa-2x icons" aria-hidden="true"></i>
+                                <span class="sr-only">Linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
