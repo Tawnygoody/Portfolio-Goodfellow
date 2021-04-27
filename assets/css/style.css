@@ -78,6 +78,22 @@ p {
     padding-left: 1rem;
 }
 
+.nav-link {
+    color: #828080;
+}
+
+.nav-link:hover {
+    color: #5df0f7;
+}
+
+.current {
+    color: #fff;
+}
+
+.toggler-icon {
+    color: #5df0f7;
+}
+
 /*---NavBar Ends---*/
 
 /*--Loader--*/
