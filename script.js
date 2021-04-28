@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+    $(function() {
+        var srcText = 'Hi,\nIm Chris,\nWeb Developer';
+        var i = 0;
+        var result = srcText[i];
+        setInterval(function() {
+            if(i == srcText.length) {
+                clearInterval(this);
+                return
+            };
+            i++;
+            result += srcText[i].replace("\n", "<br/>");
+            $("#type-text").html(result);
+        }, 150);
+    });
+
     var colors = ['#5df0f7', '#42eff7', '#24eaf3', '#bcf6f9'];
 
     $(".home-container").mousemove(function (event) {
@@ -62,3 +77,4 @@ window.addEventListener("load", function () {
                     }, 1000 );
     
 });
+

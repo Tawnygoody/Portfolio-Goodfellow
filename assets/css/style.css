@@ -117,7 +117,7 @@ p {
 }
 
 .loader.hidden {
-    animation: fadeOut 1s;
+    animation: fadeOut 1.5s;
     animation-fill-mode: forwards;
 }
 
@@ -127,6 +127,8 @@ p {
         visibility: hidden;
     }
 }
+
+/*--Loader Ends--*/
 
 /*---Page Content---*/
 
