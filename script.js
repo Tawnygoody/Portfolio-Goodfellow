@@ -12,7 +12,7 @@ $(document).ready(function () {
             i++;
             result += srcText[i].replace("\n", "<br/>");
             $("#type-text").html(result);
-        }, 150);
+        }, 120);
     });
 
     var colors = ['#5df0f7', '#42eff7', '#24eaf3', '#bcf6f9'];
