@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 
@@ -106,10 +113,19 @@ p {
     width: 100%;
     height: 100%;
     background-color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .loader > img {
@@ -117,8 +133,17 @@ p {
 }
 
 .loader.hidden {
-    animation: fadeOut 1.5s;
-    animation-fill-mode: forwards;
+    -webkit-animation: fadeOut 1.5s;
+            animation: fadeOut 1.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 @keyframes fadeOut {
@@ -171,19 +196,24 @@ p {
 }
 
 .overlay-text {
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
     transition: 0.5s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
     font-size: 1.5rem;
 }
 
 .carousel-item:hover .img-overlay {
-    filter: brightness(30%);
+    -webkit-filter: brightness(30%);
+            filter: brightness(30%);
 }
 
 .carousel-item:hover .overlay-text {
@@ -210,14 +240,31 @@ p {
 
     color: var(--initialTextColor);
 
+    background-image: -webkit-gradient(linear,
+        left top, right top,
+        from(var(--initialBgColor)),
+        color-stop(50%, var(--initialBgColor)),
+        color-stop(50%, var(--slideBgColor)),
+        to(var(--slideBgColor)));
+
+    background-image: -o-linear-gradient(left,
+        var(--initialBgColor) 0%,
+        var(--initialBgColor) 50%,
+        var(--slideBgColor) 50%,
+        var(--slideBgColor) 100%);
+
     background-image: linear-gradient(90deg,
         var(--initialBgColor) 0%,
         var(--initialBgColor) 50%,
         var(--slideBgColor) 50%,
         var(--slideBgColor) 100%);
     background-size: 200%;
+    -webkit-transition: background-position .3s cubic-bezier(.47, .1, 1, .63), color .2s linear;
+    -o-transition: background-position .3s cubic-bezier(.47, .1, 1, .63), color .2s linear;
     transition: background-position .3s cubic-bezier(.47, .1, 1, .63), color .2s linear;
-    transition-delay: 0.0s, 0.15s;
+    -webkit-transition-delay: 0.0s, 0.15s;
+         -o-transition-delay: 0.0s, 0.15s;
+            transition-delay: 0.0s, 0.15s;
 }
 
 .home-buttons:hover {
@@ -279,10 +326,19 @@ p {
     position: relative;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: #181818;
 }
 
@@ -304,7 +360,9 @@ p {
     fill: none;
     stroke-width: 10;
     stroke: #080808;
-    transform: translate( 5px,5px);
+    -webkit-transform: translate( 5px,5px);
+        -ms-transform: translate( 5px,5px);
+            transform: translate( 5px,5px);
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
     stroke-linecap: round;
@@ -347,9 +405,15 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #999;
 }
 
@@ -357,9 +421,15 @@ p {
     position: absolute;
     width: 50%;
     height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .box .percent .number h4 {
