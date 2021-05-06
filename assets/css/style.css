@@ -382,6 +382,7 @@ p {
     stroke-dashoffset: calc(440 - (440 * 60) / 100);
     stroke-dashoffset: -webkit-calc(440 - (440 * 60) / 100);
     stroke-dashoffset: -moz-calc(440 - (440 * 60) / 100);
+    stroke-dashoffset: 176;
     stroke: #5df0f7;
 }
 
