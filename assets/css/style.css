@@ -380,6 +380,8 @@ p {
 
 .rating:nth-child(2) svg circle:nth-child(2) {
     stroke-dashoffset: calc(440 - (440 * 60) / 100);
+    stroke-dashoffset: -webkit-calc(440 - (440 * 60) / 100);
+    stroke-dashoffset: -moz-calc(440 - (440 * 60) / 100);
     stroke: #5df0f7;
 }
 
