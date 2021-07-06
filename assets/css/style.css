@@ -398,18 +398,18 @@ p {
 }
 
 .rating:nth-child(4) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 20) / 100);
-    stroke-dashoffset: -webkit-calc(440 - (440 * 20) / 100);
-    stroke-dashoffset: -moz-calc(440 - (440 * 20) / 100);
-    stroke-dashoffset: 352;
+    stroke-dashoffset: calc(440 - (440 * 30) / 100);
+    stroke-dashoffset: -webkit-calc(440 - (440 * 30) / 100);
+    stroke-dashoffset: -moz-calc(440 - (440 * 30) / 100);
+    stroke-dashoffset: 308;
     stroke: #5df0f7;
 }
 
 .rating:nth-child(5) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 10) / 100);
-    stroke-dashoffset: -webkit-calc(440 - (440 * 10) / 100);
-    stroke-dashoffset: -moz-calc(440 - (440 * 10) / 100);
-    stroke-dashoffset: 396;
+    stroke-dashoffset: calc(440 - (440 * 20) / 100);
+    stroke-dashoffset: -webkit-calc(440 - (440 * 20) / 100);
+    stroke-dashoffset: -moz-calc(440 - (440 * 20) / 100);
+    stroke-dashoffset: 352;
     stroke: #5df0f7;
 }
 
