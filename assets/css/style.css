@@ -61,6 +61,16 @@ p {
     margin-bottom: 0;
 }
 
+.card {
+    border: none;
+}
+
+hr {
+    width: 90%;
+    border: 0.5px solid #5df0f7;
+}
+
+
 /*---Text Ends---*/
 
 /*---NavBar---*/
@@ -185,6 +195,10 @@ p {
     min-height: calc(100vh - 167px);
 }
 
+.content-background {
+    background-color: #181818;
+}
+
 .page-container {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -265,6 +279,11 @@ p {
     -webkit-transition-delay: 0.0s, 0.15s;
          -o-transition-delay: 0.0s, 0.15s;
             transition-delay: 0.0s, 0.15s;
+}
+
+.product-buttons {
+    display: inline-block;
+    width: 75%;
 }
 
 .home-buttons:hover {
